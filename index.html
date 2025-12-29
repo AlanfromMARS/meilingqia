@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>梅岭泉 Meiling Spring</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              daiqing: '#1E404A', // Deep Cyan/Dark Blue-Green - Primary
+              zhuhong: '#A82C2C', // Vermilion - Accent/Action
+              mibai: '#F5F2EB',   // Rice White - Background
+              shilv: '#4A6F62',   // Stone Green - Secondary/Icons
+              songlv: '#3B7A57',  // Pine Green - Success
+              zheshi: '#C16200',  // Ochre - Warning
+              mohui: '#333333',   // Ink Gray - Text
+              qianhui: '#777777', // Light Gray - Subtext
+              danhui: '#EEEEEE',  // Pale Gray - Borders
+            },
+            fontFamily: {
+              serif: ['"Noto Serif SC"', 'serif'], // For that New Chinese look
+              sans: ['Roboto', 'sans-serif'],
+            },
+            backgroundImage: {
+              'paper-texture': "url('https://www.transparenttextures.com/patterns/cream-paper.png')",
+              'ink-gradient': "radial-gradient(circle at 50% 30%, rgba(30, 64, 74, 0.8), rgba(30, 64, 74, 1))",
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      /* Custom scrollbar hiding for clean mobile look */
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+      body {
+        background-color: #2d3748; /* Dark background for desktop view to highlight the mobile app frame */
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0",
+    "recharts": "https://aistudiocdn.com/recharts@^3.5.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
